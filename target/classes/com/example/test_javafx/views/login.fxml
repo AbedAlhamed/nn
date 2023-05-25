@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.test_javafx.controllers.LoginController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="LIGHTSKYBLUE" height="508.0" layoutY="-4.0" stroke="BLACK" strokeType="INSIDE" width="800.0" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" cache="true" fill="WHITE" height="504.0" layoutX="1.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="482.0" />
+        <Button fx:id="login" layoutX="78.0" layoutY="348.0" mnemonicParsing="false" onAction="#loginTeatcher" prefHeight="46.0" prefWidth="328.0" style="-fx-background-color: A7FA7A;" text="login">
+            <font>
+                <Font name="System Bold Italic" size="21.0" />
+            </font></Button>
+        <Label layoutX="222.0" layoutY="87.0" text="login " textAlignment="CENTER">
+            <font>
+                <Font name="System Bold" size="26.0" />
+            </font>
+        </Label>
+        <Label layoutX="45.0" layoutY="166.0" text="User Name">
+            <font>
+                <Font size="18.0" />
+            </font>
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </padding>
+        </Label>
+        <Label layoutX="54.0" layoutY="236.0" text="password">
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </padding>
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <TextField fx:id="userName" layoutX="208.0" layoutY="170.0" prefHeight="25.0" prefWidth="187.0" style="-fx-background-radius: 20;" />
+        <TextField fx:id="pass" layoutX="208.0" layoutY="239.0" prefHeight="25.0" prefWidth="187.0" style="-fx-background-radius: 20;" />
+        <Label layoutX="544.0" layoutY="224.0" text="hellow teather">
+            <font>
+                <Font size="32.0" />
+            </font>
+            <padding>
+                <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+            </padding>
+            <textFill>
+                <LinearGradient endX="1.0" endY="1.0" startX="0.32701421800947866" startY="0.35071090047393366">
+                    <stops>
+                        <Stop>
+                            <color>
+                                <Color red="0.23000000417232513" green="0.21389999985694885" blue="0.21389999985694885" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.0548780487804878">
+                            <color>
+                                <Color red="0.23000000417232513" green="0.21389999985694885" blue="0.21389999985694885" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.1912751677852349">
+                            <color>
+                                <Color red="0.75" green="0.0729166641831398" blue="0.0729166641831398" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.7449664429530202">
+                            <color>
+                                <Color red="0.2368421107530594" green="0.21820175647735596" blue="0.21820175647735596" />
+                            </color>
+                        </Stop>
+                        <Stop offset="0.9826690129317401">
+                            <color>
+                                <Color red="0.75" green="0.07500000298023224" blue="0.07500000298023224" />
+                            </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                            <color>
+                                <Color red="0.75" green="0.07500000298023224" blue="0.07500000298023224" />
+                            </color>
+                        </Stop>
+                    </stops>
+                </LinearGradient>
+            </textFill>
+        </Label>
+        <Button fx:id="changeType" alignment="CENTER" layoutX="406.0" layoutY="240.0" mnemonicParsing="false" onAction="#changeType" prefHeight="24.0" prefWidth="22.0" />
+    </children>
+</AnchorPane>
